@@ -1,0 +1,15 @@
+import { Request, Response } from "express";
+import { MyRequest } from "@/Interfaces/Request.interface";
+export declare const followUser: (request: MyRequest, response: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const unfollowUser: (request: MyRequest, response: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const removeFollower: (request: MyRequest, response: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const acceptFollowRequest: (request: MyRequest, response: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const rejectFollowRequest: (request: MyRequest, response: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const syncClerkUsers: (req?: Request, res?: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const getUserDetailsofclerk: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const updateUserInterests: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const toggleAnonymity: (request: MyRequest, response: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const getUserDetailsByIdentifier: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const savePersonalityType: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const getPersonalityType: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const editUserProfile: (req: MyRequest, res: Response) => Promise<Response<any, Record<string, any>>>;
